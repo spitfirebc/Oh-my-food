@@ -4,20 +4,49 @@ a{
 }
 
 
-.header{
-    border: 1px solid green;
+.logo{
     @include center;
-    padding: 10px;
+    padding: 20px 0px 10px 0px;
+    img{
+        width: 40%;
+    }
 }
-
 
 
 .location{
-    border: 1px solid red;
+    padding: 20px;
     @include center;
-    gap: 10px;
     background-color: grey;
+    &__search{
+        i{
+            margin-right: 15px;
+        }
+    }
+    input{
+        border-style: hidden;
+        color: blue;
+    }
 }
+
+.explore{
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background-color: $background-colour;
+
+}
+
+.subheading{
+    @include fontshrikhand;
+}
+
+
+
+
+
+
 
 .restaurants{
     background-color: $background-colour;
