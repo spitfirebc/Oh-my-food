@@ -1,0 +1,24 @@
+
+
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@mixin desktop{
+    @media screen and (min-width :992px) {
+        @content;
+        
+    }
+}
+
+@mixin tablet{
+    @media screen and (min-width :768px) {
+        @content;
+        
+    }
+}

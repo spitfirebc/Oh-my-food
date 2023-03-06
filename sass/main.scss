@@ -1,0 +1,15 @@
+@import "config";
+@import "animations";
+@import "typography";
+@import "home";
+@import "menu";
+@import "responsive";
+
+
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
