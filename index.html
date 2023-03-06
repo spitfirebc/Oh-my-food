@@ -22,28 +22,55 @@
     
 
 <header>
-
-<div class="header">
+    <div class="header--logo">
     <img src="img/logo/ohmyfood.png" alt="oh my food logo">
-</div>
+    </div>
+</header>
+
 
 <div class="location">
-    <i class="fa-solid fa-location-dot"></i>
-    <p>Paris, Belleville</p>
-
+    <form class="location__search" action="#">
+        <i class="fa-solid fa-location-dot"></i>
+        <input type="text" placeholder="Paris, Belleville">
+    </form>
 </div>
 
-</header>
 
 
 <!-- book your menu box including button -->
 <div class="explore">
-    <h2>Book the menu you like</h2>
-    <h5>Discover top-of-the-art restaurants we picked for you</h5>
-    <div class="button">
-        <h3>Explore our restaurants</h3>
-    </div>
+    <div class="subheading"> Book the menu you like</div>
+    <div class="info"> Discover top-of-the-art restaurants we picked for you</div>
+    <button class="button">Explore our restaurants</button>
+</div>
 
+<!-- how it works -->
+
+<div class="howitworks"> 
+    <div class="subheading">How it Works</div>
+
+        <div class="howitworks--cards">
+            <div class="tab">
+                <div class="tab__number">1</div>
+                <div class="tab__icon"> <i class="fa-solid fa-mobile-screen-button"></i></div>
+                <div class="tab__text">Choose a restaurants</div>
+            </div>
+
+
+            <div class="tab">
+                <div class="tab__number">2</div>
+                <div class="tab__icon"> <i class="fa-solid fa-list-ul"></i></div>
+                <div class="tab__text">Create your menu</div>
+            </div>
+
+
+
+            <div class="tab">
+                <div class="tab__number">3</div>
+                <div class="tab__icon"> <i class="fa-solid fa-store"></i></i></div>
+                <div class="tab__text">Go enjoy it at the restaurants</div>
+            </div>
+        </div>
 </div>
 
 
@@ -51,17 +78,21 @@
 
 <div class="restaurants">
 
-    <h3>Restaurants</h3>
+    <div class="subheading">Restaurants</div>
 
     <a href="#">
         <div class="card">
             <div class="card__image">
-                <img src="img/restaurants/the-full-palette.jpg" alt="The Full Palette">
+                <img src="img/restaurants/the-full-palette.jpg" alt="The Full Palette restaurant. A plate of filet of sole is being served">
             </div>
+            <div class="card__image__tag">New</div>
             <div class="card__text">
-                <h4>The Full Pallette</h4>
-                New york
-                <div class="heart"> <i class="fa-regular fa-heart"></i></div>
+                <strong>The Full Pallette</strong>
+                <p>New York</p>
+                <div class="heart"> 
+                    <div class="heart--empty"><i class="fa-regular fa-heart"></i></div>
+                    <div class="heart--full"><i class="fa-solid fa-heart"></i></div>
+                </div>
             </div>
         </div>      
     </a>
@@ -69,11 +100,16 @@
     <a href="#">
         <div class="card">
             <div class="card__image">
-                <img src="img/restaurants/the-enchanted-plate.jpg" alt="The Enchanted Plate">
+                <img src="img/restaurants/the-enchanted-plate.jpg" alt="The Enchated Plate. A plate of battered scallops and celery.">
             </div>
+            <div class="card__image__tag">New</div>
             <div class="card__text">
-                <h4>The Enchanted Place</h4>
-                New york
+                <strong>The Enchanted Plate</strong>
+                <p>New York</p>
+                <div class="heart"> 
+                    <div class="heart--empty"><i class="fa-regular fa-heart"></i></div>
+                    <div class="heart--full"><i class="fa-solid fa-heart"></i></div>
+                </div>
             </div>
         </div>      
     </a>
@@ -81,11 +117,15 @@
     <a href="#">
         <div class="card">
             <div class="card__image">
-                <img src="img/restaurants/Bastille.jpg" alt="Bastille">
+                <img src="img/restaurants/Bastille.jpg" alt="Bastille - game hen with vegetable gnocchis">
             </div>
             <div class="card__text">
-                <h4>Bastille</h4>
-                New york
+                <strong>Bastille</strong>
+                <p>New York</p>
+                <div class="heart"> 
+                    <div class="heart--empty"><i class="fa-regular fa-heart"></i></div>
+                    <div class="heart--full"><i class="fa-solid fa-heart"></i></div>
+                </div>
             </div>
         </div>      
     </a>
@@ -93,19 +133,18 @@
     <a href="#">
         <div class="card">
             <div class="card__image">
-                <img src="img/restaurants/le-gourmand.jpg" alt="Le gourmand">
+                <img src="img/restaurants/le-gourmand.jpg" alt="Le Gourmand - tuna carpaccio seasoned with yuzu">
             </div>
             <div class="card__text">
-                <h4>Le gourmand</h4>
-                New york
+                <strong>Le Gourmand</strong>
+                <p>New York</p>
+                <div class="heart"> 
+                    <div class="heart--empty"><i class="fa-regular fa-heart"></i></div>
+                    <div class="heart--full"><i class="fa-solid fa-heart"></i></div>
+                </div>
             </div>
         </div>      
     </a>
-
-
-
-
-    
 </div>
 
 
@@ -116,16 +155,19 @@
 
 <footer>
 
-    <img src="img/logo/ohmyfood@2x.svg" alt="">
-
-    <div class="links">
+    <div class="footer__logo">
+        <img src="img/logo/ohmyfood@2x.svg" alt="">
+    </div>
+    
+    <div class="footer__links">
         <ul>
-            <li><a href="#"><i class="fa-solid fa-utensils"></i>  Suggest a restaurants</a></li>
+            <li><a href="#"><i class="fa-solid fa-utensils"></i>   Suggest a restaurants</a></li>
             <li><a href="#"><i class="fa-solid fa-handshake-angle"></i> Become a partner</a></li>
             <li><a href="#">Legal</a></li>
-            <li><a href="#">Contanct</a></li>
+            <li><a href="mailto:contact@ohmyfood.com">Contanct</a></li>
         </ul>
     </div>
+
 </footer>
 
 </body>
