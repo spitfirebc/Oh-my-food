@@ -1,5 +1,7 @@
 
-
+a{
+    text-decoration: none;
+}
 
 
 .header{
@@ -20,11 +22,6 @@
 .restaurants{
     background-color: $background-colour;
     height: 1000px;
-
-    a{
-        text-decoration: none;
-    }
-
     .card{
         background-color: #fff;
         border-radius: 20px;
@@ -53,8 +50,6 @@
             transform: scale(1.1);
         }
     }
-
-   
 }
 
 
@@ -67,10 +62,6 @@ footer{
     img{
     width: 20%;
     padding: 30px 0 10px 15px;
-    }
-
-    a{
-        text-decoration: none;
     }
 
     li{
