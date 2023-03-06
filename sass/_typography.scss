@@ -4,3 +4,12 @@ $primary-colour: #9356DC;
 $secondary-colour: #FF79DA;
 $tertiary-colour: #99E2D0;
 $background-colour:#F2F2F2;
+
+
+@mixin fontroboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin fontshrikhand{
+    font-family: 'Shrikhand', cursive;
+}
