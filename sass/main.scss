@@ -6,6 +6,9 @@
 @import "responsive";
 
 
+body{
+    box-sizing: border-box;
+}
 
 img{
     width: 100%;
@@ -13,3 +16,4 @@ img{
     object-fit: cover;
     object-position: center;
 }
+
