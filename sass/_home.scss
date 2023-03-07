@@ -87,6 +87,7 @@ a{
         &__text{
             @include fontroboto;
             font-weight: 400;
+            font-size: 20px;
         }
         &:hover{
             background-color: $secondary-colour;
@@ -107,7 +108,7 @@ a{
 
 .restaurants{
     background-color: $background-colour;
-    height: 1000px;
+    height: 100%;
     .card{
         background-color: #fff;
         border-radius: 20px;
