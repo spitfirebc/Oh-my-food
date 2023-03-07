@@ -105,10 +105,14 @@ a {
   background-color: #F2F2F2;
   height: 100%;
 }
+.restaurants .subheading {
+  padding: 50px 20px 20px 20px;
+  margin-bottom: 15px;
+}
 .restaurants .card {
   background-color: #fff;
   border-radius: 20px;
-  width: 85%;
+  width: 90%;
   margin: auto;
   overflow: hidden;
   margin-bottom: 30px;
@@ -121,10 +125,34 @@ a {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
+.restaurants .card__image__tag {
+  background-color: greenyellow;
+  width: 60px;
+  text-align: center;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  padding: 7px;
+}
+.restaurants .card__bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
 .restaurants .card__text {
-  font-size: 15px;
-  padding: 0 0 5px 10px;
+  border: 1px solid red;
+  padding: 10px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
   color: black;
+}
+.restaurants .card .heart--empty {
+  border: 1px solid red;
+}
+.restaurants .card .heart--full i {
+  background: linear-gradient(to top, #FF79DA, #9356DC);
+  border: 1px solid green;
 }
 .restaurants .card:hover {
   transform: scale(1.1);
