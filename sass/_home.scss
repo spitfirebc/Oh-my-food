@@ -24,7 +24,8 @@ a{
     }
     input{
         border-style: hidden;
-        color: blue;
+        color: black;
+        @include fontroboto;
     }
 }
 
@@ -49,6 +50,7 @@ a{
         font-size: 20px;
         color: #fff;
         border-radius: 30px;
+        border: none;   
     }
 
 }
@@ -62,6 +64,9 @@ a{
 .howitworks{
     padding: 20px;
     margin: 20px 0px;
+    &--cards{
+        margin-top: 30px;
+    }
     .tab{
         display: flex;
         flex-direction: row;
@@ -71,7 +76,7 @@ a{
         margin-bottom: 20px;
         height: 50px;
         align-items: center;
-        transition: all 0.4s ease-in-out;
+        transition: all 0.5s ease-in-out;
         &__number{
             background-color: $primary-colour;
             border-radius: 10px;

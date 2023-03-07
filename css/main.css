@@ -24,7 +24,8 @@ a {
 }
 .location input {
   border-style: hidden;
-  color: blue;
+  color: black;
+  font-family: "Roboto", sans-serif;
 }
 
 .explore {
@@ -49,6 +50,7 @@ a {
   font-size: 20px;
   color: #fff;
   border-radius: 30px;
+  border: none;
 }
 
 .subheading {
@@ -61,6 +63,9 @@ a {
   padding: 20px;
   margin: 20px 0px;
 }
+.howitworks--cards {
+  margin-top: 30px;
+}
 .howitworks .tab {
   display: flex;
   flex-direction: row;
@@ -70,7 +75,7 @@ a {
   margin-bottom: 20px;
   height: 50px;
   align-items: center;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .howitworks .tab__number {
   background-color: #9356DC;
