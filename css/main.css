@@ -121,12 +121,10 @@ a {
 }
 .restaurants .card__image {
   width: 100%;
-  height: 120px;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+  height: 10%;
 }
 .restaurants .card__image__tag {
-  background-color: greenyellow;
+  background-color: #99E2D0;
   width: 60px;
   text-align: center;
   position: absolute;
@@ -140,30 +138,60 @@ a {
   justify-content: space-between;
   align-content: center;
 }
-.restaurants .card__text {
+.restaurants .card__bottom .card__text {
   border: 1px solid red;
   padding: 10px;
   font-size: 20px;
   font-family: "Roboto", sans-serif;
   color: black;
+  width: 70%;
 }
-.restaurants .card .heart--empty {
-  border: 1px solid red;
+.restaurants .card__bottom .heart {
+  position: relative;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.restaurants .card .heart--full i {
-  background: linear-gradient(to top, #FF79DA, #9356DC);
-  border: 1px solid green;
+.restaurants .card__bottom .heart--empty {
+  position: absolute;
+  font-size: xx-large;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.restaurants .card:hover {
-  transform: scale(1.1);
+.restaurants .card__bottom .heart--full {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: linear-gradient(to top, #FF79DA, #9356DC);
+  font-size: xx-large;
+  position: absolute;
+  opacity: 0;
+  transition: all 1s linear;
 }
-
-footer img {
-  width: 20%;
+.restaurants .card__bottom .heart:hover .heart--full {
+  opacity: 1;
+}
+footer {
+  background-color: #353535;
+}
+footer .footer__text {
+  width: 15%;
   padding: 30px 0 10px 15px;
+  color: white;
+  font-family: "Shrikhand", cursive;
+}
+footer .footer__links i {
+  color: white;
+}
+footer .footer__links a {
+  color: white;
 }
 footer li {
   list-style: none;
+  padding: 2px;
 }
 
 @media screen and (min-width: 768px) {
@@ -173,13 +201,10 @@ footer li {
 }
 body {
   box-sizing: border-box;
+  margin: 0;
 }
 
 img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
 }/*# sourceMappingURL=main.css.map */
