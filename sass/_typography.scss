@@ -1,9 +1,24 @@
 
 // colours /
 $primary-colour: #9356DC;
+$primaryColorLight: #F5EDFF;
 $secondary-colour: #FF79DA;
 $tertiary-colour: #99E2D0;
+$tertiaryColorDark: #0b8d6e;
 $background-colour:#F2F2F2;
+
+// text color
+
+$white: white;
+$black: black;
+
+// background colors
+
+$lightGrey: #f6f6f6;
+$darkGrey: #eaeaea;
+$darkerGrey: #d0d0d0;
+$shadowGrey: #929292;
+$blackGrey: #353535;
 
 
 @mixin fontroboto {
