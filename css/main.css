@@ -17,7 +17,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: grey;
+  background-color: #eaeaea;
 }
 .location__search {
   font-family: "Roboto", sans-serif;
@@ -121,7 +121,7 @@ a {
 }
 .restaurants .card__image {
   width: 100%;
-  height: 10%;
+  height: 200px;
 }
 .restaurants .card__image__tag {
   background-color: #99E2D0;
@@ -177,24 +177,27 @@ a {
 .restaurants .card__bottom .heart:hover .heart--full {
   opacity: 1;
 }
-footer {
+.footer {
   background-color: #353535;
 }
-footer .footer__text {
-  width: 15%;
-  padding: 30px 0 10px 15px;
-  color: white;
-  font-family: "Shrikhand", cursive;
+.footer .footer__logo {
+  filter: invert(1);
+  width: 150px;
+  margin-left: 20px;
 }
-footer .footer__links i {
+.footer .footer__links i {
+  color: white;
+  width: 20px;
+}
+.footer .footer__links a {
   color: white;
 }
-footer .footer__links a {
-  color: white;
-}
-footer li {
+.footer li {
   list-style: none;
-  padding: 2px;
+  padding: 3px;
+  margin-left: -20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 
 @media screen and (min-width: 768px) {

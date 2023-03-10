@@ -16,7 +16,7 @@ a{
 .location{
     padding: 20px;
     @include center;
-    background-color: grey;
+    background-color: $darkGrey;
     &__search{
         @include fontroboto;
         font-weight: 500;
@@ -127,7 +127,7 @@ a{
         
         &__image{
             width: 100%;
-            height: 10%;
+            height: 200px;
             
             &__tag{
                 background-color: $tertiary-colour;
@@ -191,19 +191,20 @@ a{
 
 
 
-footer{
+.footer{
     background-color: $blackGrey;
 
-    .footer__text{
-        width: 15%;
-        padding: 30px 0 10px 15px;
-        color: $white;
-        @include fontshrikhand;
+
+    .footer__logo{
+        filter: invert(1);
+        width: 150px;
+        margin-left: 20px;
     }
 
     .footer__links{
         i{
             color: $white;
+            width: 20px;
         }
         a{
             color: $white;
@@ -212,6 +213,9 @@ footer{
 
     li{
         list-style: none;
-        padding: 2px;
+        padding: 3px;
+        margin-left: -20px;
+        @include fontroboto;
+        font-weight: 400;
     }    
 }
