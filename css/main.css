@@ -165,7 +165,10 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: linear-gradient(to top, #FF79DA, #9356DC);
+  background-image: linear-gradient(to top, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
   font-size: xx-large;
   position: absolute;
   opacity: 0;

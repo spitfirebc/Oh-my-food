@@ -166,7 +166,9 @@ a{
                 }
                     &--full{
                         @include center;
-                        color: linear-gradient(to top, $secondary-colour, $primary-colour);
+                        background-image: linear-gradient(to top, $secondary-colour, $primary-colour);
+                        background-clip: text;
+                        color: transparent;
                         font-size: xx-large;
                         position: absolute;
                         opacity: 0;
