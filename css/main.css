@@ -124,6 +124,7 @@ a {
   height: 200px;
 }
 .restaurants .card__image__tag {
+  color: #0b8d6e;
   background-color: #99E2D0;
   width: 60px;
   text-align: center;
@@ -139,12 +140,14 @@ a {
   align-content: center;
 }
 .restaurants .card__bottom .card__text {
-  border: 1px solid red;
-  padding: 10px;
+  padding: 15px;
   font-size: 20px;
   font-family: "Roboto", sans-serif;
   color: black;
   width: 70%;
+}
+.restaurants .card__bottom p {
+  margin: 0;
 }
 .restaurants .card__bottom .heart {
   position: relative;
