@@ -1,16 +1,25 @@
 // utilities //
-@use "./utils/mixins";
-@use "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/variables";
 
-// stlying for the pages //
-@use "./pages/home";
-@use "./pages/menu";
+@import "./base/base";
 
 // Layout of pages //
-@use "./layout/header";
-@use "./layout/footer";
-@use "./layout/heart";
-@use "./layout/button";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/heart";
+@import "./layout/button";
+
+// stlying for the pages //
+@import "./pages/home";
+@import "./pages/menu";
+
+
+
+
+
+
+
 
 
 
