@@ -68,25 +68,27 @@ a {
 .howitworks .tab {
   display: flex;
   flex-direction: row;
+  justify-content: start;
+  align-items: center;
   padding: 10px;
   background-color: #F2F2F2;
   border-radius: 20px;
   margin-bottom: 20px;
   height: 50px;
-  align-items: center;
   transition: all 0.5s ease-in-out;
 }
 .howitworks .tab__number {
   background-color: #9356DC;
-  border-radius: 10px;
-  width: 30px;
-  text-align: center;
+  color: white;
+  margin-left: -25px;
+  padding: 5px 10px;
+  border-radius: 50%;
 }
 .howitworks .tab__icon {
   padding: 10px;
 }
 .howitworks .tab__icon i {
-  color: grey;
+  color: #929292;
 }
 .howitworks .tab__text {
   font-family: "Roboto", sans-serif;
@@ -180,6 +182,7 @@ a {
 .restaurants .card__bottom .heart:hover .heart--full {
   opacity: 1;
 }
+
 .footer {
   background-color: #353535;
 }

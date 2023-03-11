@@ -1,5 +1,11 @@
 
+@mixin fontroboto {
+    font-family: 'Roboto', sans-serif;
+}
 
+@mixin fontshrikhand{
+    font-family: 'Shrikhand', cursive;
+}
 
 @mixin center {
     display: flex;
@@ -7,7 +13,12 @@
     align-items: center;
 }
 
-
+@mixin flex (){
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
 
 @mixin desktop{
     @media screen and (min-width :992px) {

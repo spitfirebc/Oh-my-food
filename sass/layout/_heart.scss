@@ -1,0 +1,28 @@
+.heart {
+    position: relative;
+    width: 30%;
+    @include center;
+    &--empty {
+      position: absolute;
+      font-size: xx-large;
+      color: $black;
+      @include center;
+    }
+    &--full {
+      @include center;
+      background-image: linear-gradient(
+        to top,
+        $secondary-colour,
+        $primary-colour
+      );
+      background-clip: text;
+      color: transparent;
+      font-size: xx-large;
+      position: absolute;
+      opacity: 0;
+      transition: all 1s linear;
+    }
+    &:hover .heart--full {
+      opacity: 1;
+    }
+}
