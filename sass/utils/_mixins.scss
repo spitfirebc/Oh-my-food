@@ -13,6 +13,24 @@
     align-items: center;
 }
 
+@mixin flexrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@mixin flexend{
+    display: flex;
+    align-items: end;
+}
+
+@mixin flexSpaceBetween{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 @mixin flex (){
     display: flex;
     flex-direction: row;
