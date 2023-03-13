@@ -10,11 +10,7 @@
     }
     &--full {
       @include center;
-      background-image: linear-gradient(
-        to top,
-        $secondary-colour,
-        $primary-colour
-      );
+      background-image: linear-gradient(to top, $secondary-colour, $primary-colour);
       background-clip: text;
       color: transparent;
       font-size: xx-large;
