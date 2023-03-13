@@ -117,6 +117,45 @@ button {
   border: none;
 }
 
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top right, #FF79DA, #9356DC);
+  animation: hidden 0s ease 3s;
+  animation-fill-mode: forwards;
+}
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #eaeaea;
+  border-top-color: #9356DC;
+  border-bottom-color: #FF79DA;
+  border-radius: 50%;
+  animation: loading 0.75s ease;
+  animation-iteration-count: 5;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+@keyframes hidden {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 .location {
   padding: 20px;
   display: flex;
