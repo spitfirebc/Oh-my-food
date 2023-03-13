@@ -20,6 +20,8 @@ header {
 .back-arrow {
   display: flex;
   font-size: 25px;
+  position: absolute;
+  left: 30px;
   color: black;
   transition: all 1s ease-in-out;
 }
@@ -115,6 +117,7 @@ button {
   color: #fff;
   border-radius: 30px;
   border: none;
+  box-shadow: 5px 5px;
 }
 
 .loader {
@@ -309,7 +312,7 @@ button {
 }
 .menu-heading__title {
   font-family: "Shrikhand", cursive;
-  font-size: 35px;
+  font-size: 30px;
   margin: 30px;
 }
 

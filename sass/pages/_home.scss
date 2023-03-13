@@ -36,10 +36,11 @@
 }
 
 .howitworks {
-  padding: 20px;
+  padding: 10px;
   margin: 20px 0px;
   &--cards {
     margin-top: 30px;
+    padding: 10px
   }
   .tab {
     @include flex;
