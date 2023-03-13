@@ -118,6 +118,7 @@ button {
 }
 
 .loader {
+  z-index: 9999;
   position: fixed;
   top: 0;
   left: 0;
@@ -127,7 +128,7 @@ button {
   justify-content: center;
   align-items: center;
   background: linear-gradient(to top right, #FF79DA, #9356DC);
-  animation: hidden 0s ease 3s;
+  animation: hidden 0s ease-out 3s;
   animation-fill-mode: forwards;
 }
 .loader::after {
@@ -138,7 +139,7 @@ button {
   border-top-color: #9356DC;
   border-bottom-color: #FF79DA;
   border-radius: 50%;
-  animation: loading 0.75s ease;
+  animation: loading 1s ease;
   animation-iteration-count: 5;
 }
 
