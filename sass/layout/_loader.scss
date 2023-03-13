@@ -6,7 +6,7 @@
     height: 100vh;
     @include center;
     background: linear-gradient(to top right, $secondary-colour, $primary-colour);
-    animation: hidden 0s ease 3s;
+    animation: hidden 0s ease-out 3s;
     animation-fill-mode: forwards;
     
     &::after{
@@ -17,7 +17,7 @@
         border-top-color: $primary-colour;
         border-bottom-color: $secondary-colour;
         border-radius: 50%;
-        animation: loading 0.75s ease;
+        animation: loading 1s ease;
         animation-iteration-count: 5;
     }
 }
