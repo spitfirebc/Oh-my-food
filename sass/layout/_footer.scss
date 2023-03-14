@@ -1,10 +1,13 @@
 .footer {
+
     background-color: $blackGrey;
+    padding-left: 10px;
   
     .footer__logo {
       filter: invert(1);
       width: 150px;
       margin-left: 20px;
+      padding-top: 20px;
     }
   
     .footer__links {
