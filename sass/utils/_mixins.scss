@@ -38,16 +38,23 @@
     align-items: center;
 }
 
-@mixin desktop{
-    @media screen and (min-width :992px) {
+
+
+@mixin mobile {
+    @media all and (min-width: map-get($media, "mobile")) {
         @content;
-        
     }
 }
 
-@mixin tablet{
-    @media screen and (min-width :768px) {
+
+@mixin tablet {
+    @media all and (min-width: map-get($media, "tablet")) and (max-width: map-get($media, "desktop")) {
         @content;
-        
+    }
+}
+
+@mixin desktop {
+    @media all and (min-width: map-get($media, "desktop")) {
+        @content;
     }
 }
