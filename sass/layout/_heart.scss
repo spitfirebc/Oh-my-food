@@ -1,6 +1,6 @@
 .heart {
     position: relative;
-    width: 30%;
+    width: 20%;
     @include center;
     &--empty {
       position: absolute;
@@ -21,4 +21,12 @@
     &:hover .heart--full {
       opacity: 1;
     }
+}
+
+.menu-heading{
+  .heart{
+    @include desktop{
+      width: 10%;
+    }
+  }
 }
