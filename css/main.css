@@ -282,7 +282,6 @@ button:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border: 1px solid red;
     justify-content: space-around;
     width: 100%;
   }
@@ -373,6 +372,7 @@ button:hover {
     border: 1px solid brown;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 .menu .tab {
@@ -425,7 +425,7 @@ button:hover {
   animation: check 1s ease-in-out;
 }
 .menu .tab:hover .check i {
-  animation: iconrotate 0.75s ease-in-out;
+  animation: iconrotate 0.5s ease-in-out;
 }
 
 @keyframes check {

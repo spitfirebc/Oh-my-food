@@ -33,6 +33,13 @@
         span-1{
             border-bottom: 3px solid $tertiary-colour;
         }
+        
+    }
+    &--sections{
+        @include desktop{
+            border: 1px solid brown;
+            @include flexrow;
+        }
     }
     .tab {
         background-color: $white;
@@ -59,5 +66,54 @@
             @include fontroboto;
             padding-right: 10px;
             }
+        .check{
+            background-color: $tertiary-colour;
+            @include center;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            font-size: 20px;
+            color: $white;
+            width: 15%;
+            opacity: 0;
+            transition: all 1s ease-in-out;
+            i{
+                font-size: 25px;
+            }
+        }
+        &:hover{
+            .check{
+                opacity: 1;
+                animation: check 1s ease-in-out;
+                i{
+                    animation: iconrotate 0.5s ease-in-out;
+                }
+            }
+        }
     }
+}
+
+
+@keyframes check {
+    0%{
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes iconrotate {
+    0% {
+        transform: rotate(-180deg);
+    }
+
+    100% { 
+        transform: rotate(0deg);}
 }
