@@ -108,3 +108,74 @@
         }
     }
 }
+
+
+$tab: (
+    "entrees": 0.5s,
+    "main": 3s,
+    "desserts": 5.5s,
+);
+
+@each $num, $delay in $tab {
+    .#{$num}{
+        opacity: 0;
+        position: relative;
+        animation: load 1s ease-in $delay forwards;
+    }
+}
+
+@keyframes load {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+$entres-cards: (
+    ".entrees .one": 1s,
+    ".entrees .two": 1.5s,
+    ".entrees .three": 2s,
+    ".entrees .four": 2.5s,
+);
+
+$main-cards: (
+    ".main .one": 3s,
+    ".main .two": 3.5s,
+    ".main .three": 4s,
+    ".main .four": 4.5s,
+);
+
+$dess-cards: (
+    ".desserts .one": 5.5s,
+    ".desserts .two": 6s,
+    ".desserts .three": 6.5s,
+    ".desserts .four": 7s,
+);
+
+@each $cards in $entres-cards, $main-cards, $dess-cards, {
+    @each $num, $delay in $cards {
+        #{$num}{
+            opacity: 0;
+            position: relative;
+            animation: delays 1s ease-in $delay forwards;
+        }
+    }
+    
+}
+
+@keyframes delays {
+    0% {
+        opacity: 0;
+        position: relative;
+        top: 10px;
+    }
+
+    100% {
+        opacity: 1;
+        position: relative;
+        top: 0;
+    }
+}
