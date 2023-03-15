@@ -377,10 +377,10 @@ button:hover {
 }
 @media all and (min-width: 998px) {
   .menu--sections {
-    border: 1px solid brown;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 .menu .tab {
@@ -392,6 +392,11 @@ button:hover {
   margin: 15px auto;
   padding: 5px;
   border-radius: 20px;
+}
+@media all and (min-width: 998px) {
+  .menu .tab {
+    width: 30%;
+  }
 }
 .menu .tab__text {
   font-family: "Roboto", sans-serif;

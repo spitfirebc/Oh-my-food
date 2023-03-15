@@ -38,8 +38,8 @@
     }
     &--sections{
         @include desktop{
-            border: 1px solid brown;
             @include flexrow;
+            flex-wrap: wrap;
         }
     }
     .tab {
@@ -49,6 +49,9 @@
         margin: 15px auto;
         padding: 5px;
         border-radius: 20px;
+        @include desktop{
+            width: 30%;
+        }
         &__text{
             @include fontroboto;
             margin: 10px;
