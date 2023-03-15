@@ -178,6 +178,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   background-color: #eaeaea;
+  box-shadow: inset 0px 3px 3px #d0d0d0;
 }
 .location__search {
   font-family: "Roboto", sans-serif;
@@ -270,8 +271,8 @@ button:hover {
 .restaurants {
   background-color: #F2F2F2;
   height: 100%;
-  margin: auto;
-  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
 }
 .restaurants .subheading {
   padding: 50px 20px 20px 20px;
