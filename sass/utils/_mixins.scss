@@ -48,7 +48,7 @@
 
 
 @mixin tablet {
-    @media all and (min-width: map-get($media, "tablet")) and (max-width: map-get($media, "desktop")) {
+    @media all and (min-width: map-get($media, "tablet"))  {
         @content;
     }
 }
