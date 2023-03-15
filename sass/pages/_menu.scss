@@ -110,13 +110,13 @@
 }
 
 
-$tab: (
-    "entrees": 0.5s,
-    "main": 3s,
-    "desserts": 5.5s,
+$heading: (
+    "subheading__1": 0.5s,
+    "subheading__2": 3s,
+    "subheading__3": 5.5s,
 );
 
-@each $num, $delay in $tab {
+@each $num, $delay in $heading {
     .#{$num}{
         opacity: 0;
         position: relative;
