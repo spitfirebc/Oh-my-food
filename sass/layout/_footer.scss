@@ -2,6 +2,7 @@
 
     background-color: $blackGrey;
     padding-left: 10px;
+    padding-bottom: 20px;
   
     .footer__logo {
       filter: invert(1);
@@ -11,6 +12,9 @@
     }
   
     .footer__links {
+      ul{
+        margin: 0;
+      }
       i {
         color: $white;
         width: 20px;
@@ -28,5 +32,3 @@
       font-weight: 400;
     }
   }
-
-  

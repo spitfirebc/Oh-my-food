@@ -51,12 +51,16 @@ header {
 .footer {
   background-color: #353535;
   padding-left: 10px;
+  padding-bottom: 20px;
 }
 .footer .footer__logo {
   filter: invert(1);
   width: 150px;
   margin-left: 20px;
   padding-top: 20px;
+}
+.footer .footer__links ul {
+  margin: 0;
 }
 .footer .footer__links i {
   color: white;
