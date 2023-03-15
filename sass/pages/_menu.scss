@@ -45,16 +45,19 @@
     .tab {
         background-color: $white;
         @include flexrow;
+        justify-content: none;
         width: 90%;
         margin: 15px auto;
-        padding: 5px;
         border-radius: 20px;
+        overflow: hidden;
         @include desktop{
             width: 30%;
         }
         &__text{
             @include fontroboto;
-            margin: 10px;
+            width: 90%;
+            padding: 10px;
+            overflow: hidden;
             strong{
                 font-size: 20px;
                 font-weight: 500;
@@ -63,11 +66,16 @@
                 margin: 0;
                 margin-top: 5px;
                 font-weight: 200;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                
             }
         }
         &__price{
             @include flexend;
             @include fontroboto;
+            width: 10%;
             padding-right: 10px;
             }
         .check{
@@ -77,47 +85,26 @@
             border-bottom-right-radius: 20px;
             font-size: 20px;
             color: $white;
-            width: 15%;
-            opacity: 0;
+            width: 0;
+            overflow: hidden;
             transition: all 1s ease-in-out;
             i{
                 font-size: 25px;
             }
         }
         &:hover{
+            &__text{
+                width: 70%;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
             .check{
-                opacity: 1;
-                animation: check 1s ease-in-out;
+                width: 20%;
                 i{
-                    animation: iconrotate 0.5s ease-in-out;
+                    transform: rotate(360deg);
+                    transition: all 0.75s ease-in-out;
                 }
             }
         }
     }
-}
-
-
-@keyframes check {
-    0%{
-        opacity: 0;
-        transform: translateX(20px);
-    }
-
-    1% {
-        opacity: 1;
-    }
-
-    100%{
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes iconrotate {
-    0% {
-        transform: rotate(-180deg);
-    }
-
-    100% { 
-        transform: rotate(0deg);}
 }

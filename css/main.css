@@ -388,10 +388,11 @@ button:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  justify-content: none;
   width: 90%;
   margin: 15px auto;
-  padding: 5px;
   border-radius: 20px;
+  overflow: hidden;
 }
 @media all and (min-width: 998px) {
   .menu .tab {
@@ -400,7 +401,9 @@ button:hover {
 }
 .menu .tab__text {
   font-family: "Roboto", sans-serif;
-  margin: 10px;
+  width: 90%;
+  padding: 10px;
+  overflow: hidden;
 }
 .menu .tab__text strong {
   font-size: 20px;
@@ -410,11 +413,15 @@ button:hover {
   margin: 0;
   margin-top: 5px;
   font-weight: 200;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu .tab__price {
   display: flex;
   align-items: end;
   font-family: "Roboto", sans-serif;
+  width: 10%;
   padding-right: 10px;
 }
 .menu .tab .check {
@@ -426,39 +433,22 @@ button:hover {
   border-bottom-right-radius: 20px;
   font-size: 20px;
   color: white;
-  width: 15%;
-  opacity: 0;
+  width: 0;
+  overflow: hidden;
   transition: all 1s ease-in-out;
 }
 .menu .tab .check i {
   font-size: 25px;
 }
+.menu .tab:hover__text {
+  width: 70%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 .menu .tab:hover .check {
-  opacity: 1;
-  animation: check 1s ease-in-out;
+  width: 20%;
 }
 .menu .tab:hover .check i {
-  animation: iconrotate 0.5s ease-in-out;
-}
-
-@keyframes check {
-  0% {
-    opacity: 0;
-    transform: translateX(20px);
-  }
-  1% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-@keyframes iconrotate {
-  0% {
-    transform: rotate(-180deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+  transform: rotate(360deg);
+  transition: all 0.75s ease-in-out;
 }/*# sourceMappingURL=main.css.map */
