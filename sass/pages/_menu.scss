@@ -45,7 +45,6 @@
     .tab {
         background-color: $white;
         @include flexrow;
-        justify-content: none;
         width: 90%;
         margin: 15px auto;
         border-radius: 20px;
@@ -77,6 +76,7 @@
             @include fontroboto;
             width: 10%;
             padding-right: 10px;
+            transition: all 1s ease-in-out;
             }
         .check{
             background-color: $tertiary-colour;
@@ -85,7 +85,8 @@
             border-bottom-right-radius: 20px;
             font-size: 20px;
             color: $white;
-            width: 0;
+            width: 0%;
+            transform: translateX(100%);
             overflow: hidden;
             transition: all 1s ease-in-out;
             i{
@@ -93,13 +94,17 @@
             }
         }
         &:hover{
-            &__text{
+            .tab__price{
+                transform: translateX(0);
+            }
+            .tab__text{
                 width: 70%;
                 white-space: nowrap;
                 text-overflow: ellipsis;
             }
             .check{
                 width: 20%;
+                transform: translateX(0);
                 i{
                     transform: rotate(360deg);
                     transition: all 0.75s ease-in-out;

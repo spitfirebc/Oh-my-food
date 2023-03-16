@@ -394,7 +394,6 @@ button:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  justify-content: none;
   width: 90%;
   margin: 15px auto;
   border-radius: 20px;
@@ -429,6 +428,7 @@ button:hover {
   font-family: "Roboto", sans-serif;
   width: 10%;
   padding-right: 10px;
+  transition: all 1s ease-in-out;
 }
 .menu .tab .check {
   background-color: #99E2D0;
@@ -439,20 +439,25 @@ button:hover {
   border-bottom-right-radius: 20px;
   font-size: 20px;
   color: white;
-  width: 0;
+  width: 0%;
+  transform: translateX(100%);
   overflow: hidden;
   transition: all 1s ease-in-out;
 }
 .menu .tab .check i {
   font-size: 25px;
 }
-.menu .tab:hover__text {
+.menu .tab:hover .tab__price {
+  transform: translateX(0);
+}
+.menu .tab:hover .tab__text {
   width: 70%;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 .menu .tab:hover .check {
   width: 20%;
+  transform: translateX(0);
 }
 .menu .tab:hover .check i {
   transform: rotate(360deg);

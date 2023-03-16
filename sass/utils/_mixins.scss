@@ -40,13 +40,6 @@
 
 
 
-@mixin mobile {
-    @media all and (min-width: map-get($media, "mobile")) {
-        @content;
-    }
-}
-
-
 @mixin tablet {
     @media all and (min-width: map-get($media, "tablet"))  {
         @content;
