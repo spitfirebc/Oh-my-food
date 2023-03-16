@@ -253,6 +253,7 @@ button:hover {
 @media all and (min-width: 768px) {
   .howitworks .tab {
     width: 30%;
+    margin-right: 30px;
   }
 }
 .howitworks .tab__number {
