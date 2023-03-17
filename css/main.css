@@ -455,9 +455,6 @@ button:hover {
 .menu .tab .check i {
   font-size: 25px;
 }
-.menu .tab:hover .tab__price {
-  transform: translateX(0);
-}
 .menu .tab:hover .tab__text {
   width: 70%;
   white-space: nowrap;
