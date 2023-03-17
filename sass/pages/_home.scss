@@ -47,6 +47,7 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      gap: 45px;
     }
   }
   .tab {
@@ -59,7 +60,6 @@
     transition: all 0.5s ease-in-out;
     @include tablet{
       width: 30%;
-      margin-right: 30px;
     }
     &__number {
       background-color: $primary-colour;
@@ -97,6 +97,12 @@
     padding: 50px 20px 20px 20px;
     margin-bottom: 15px;
   }
+  .desktop-container{
+    @include desktop{
+      display: flex;
+      flex-direction: row;
+    }
+  }
   .card-container{
     @include tablet{
       display: flex;
@@ -104,6 +110,7 @@
       flex-wrap: wrap;
       justify-content: space-around;
       width: 100%;
+      border: 1px solid red;
     }
   }
   a {

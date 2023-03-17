@@ -236,6 +236,7 @@ button:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 45px;
   }
 }
 .howitworks .tab {
@@ -253,7 +254,6 @@ button:hover {
 @media all and (min-width: 768px) {
   .howitworks .tab {
     width: 30%;
-    margin-right: 30px;
   }
 }
 .howitworks .tab__number {
@@ -291,6 +291,12 @@ button:hover {
   padding: 50px 20px 20px 20px;
   margin-bottom: 15px;
 }
+@media all and (min-width: 998px) {
+  .restaurants .desktop-container {
+    display: flex;
+    flex-direction: row;
+  }
+}
 @media all and (min-width: 768px) {
   .restaurants .card-container {
     display: flex;
@@ -298,6 +304,7 @@ button:hover {
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
+    border: 1px solid red;
   }
 }
 @media all and (min-width: 768px) {
