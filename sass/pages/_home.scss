@@ -99,8 +99,7 @@
   }
   .desktop-container{
     @include desktop{
-      display: flex;
-      flex-direction: row;
+    @include flexrow;
     }
   }
   .card-container{
